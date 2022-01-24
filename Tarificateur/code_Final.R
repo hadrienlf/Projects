@@ -474,7 +474,7 @@ library(rgdal)
 #)
 #on a la carte de france decoupee en departements avec:
 #FranceFormes = getData(name="GADM", country="FRA", level=2)
-#plot(FranceFormes, main="Carte de la France, départements")
+#plot(FranceFormes, main="Carte de la France, dÃ©partements")
 
 #ONISR: on a des donnees separees en 4 categories: Caracteristiques, lieux, vehicules, usagers
 caract=read.csv("C:/Users/hadri/Desktop/donnees/caracteristiques-2017.csv")
@@ -633,7 +633,7 @@ reu$Dep[which(reu$Dep=='2B')]='20.5'
 plot(pop$`Population 2019`/1000,log(pop$x))
 #relation claire entre le nombre d'accidents et le nombre d'habitants. d'ou l'harmonisation en divisant les resultats par le nombre d'habitants par departement
 plot(pop$Dep,pop$x,type='h',xlab='Departements',ylab='Nombre d\'accidents')
-plot(pop$Dep,pop$x/pop$`Population 2019`,type='h',xlab='Departements',ylab='Nombre d\'accidents lissé')
+plot(pop$Dep,pop$x/pop$`Population 2019`,type='h',xlab='Departements',ylab='Nombre d\'accidents lissÃ©')
 #on voit bien que le lissage par population reste interessant.
 
 #si on veut remettre en 2A et 2B:
